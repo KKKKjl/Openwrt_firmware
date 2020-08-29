@@ -9,4 +9,8 @@
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
-git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+mkdir package/luci-app-openclash
+cd package/luci-app-openclash
+git clone https://github.com/vernesong/OpenClash.git
+mv OpenClash/luci-app-openclash ./luci-app-openclash
+rm -rf OpenClash
