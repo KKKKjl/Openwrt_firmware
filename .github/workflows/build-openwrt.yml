@@ -14,11 +14,11 @@ on:
   repository_dispatch:
   release:
     types: published
-  push:
-    branches:
-      - main
-    paths:
-      - '.config'
+  #push:
+    #branches:
+     # - main
+    #paths:
+     # - '.config'
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
