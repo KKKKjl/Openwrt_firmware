@@ -8,5 +8,10 @@
 # https://github.com/P3TERX/Actions-OpenWrt
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
-# Uncomment a feed source
+
+# fw876/helloworld
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+
+# 添加第三方源
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
