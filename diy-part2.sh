@@ -19,5 +19,5 @@ echo 'CONFIG_PACKAGE_luci-theme-argon=y' >> .config
 sed -i '/^CONFIG_PACKAGE_luci-theme-bootstrap=y$/d' .config
 
 # openclash
-git clone --depth=1 -b master https://github.com/vernesong/OpenClash package/lean/OpenClash
-echo 'CONFIG_PACKAGE_luci-app-openclash=y' >> .config
+# git clone --depth=1 -b master https://github.com/vernesong/OpenClash package/lean/OpenClash
+# echo 'CONFIG_PACKAGE_luci-app-openclash=y' >> .config
